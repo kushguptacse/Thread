@@ -2,8 +2,10 @@ package practice;
 
 public class OddEvenThread {
 
+	private static final int N = 20;
+
 	public static void main(String[] args) {
-		new OddEvenThread().testThread(20);
+		new OddEvenThread().testThread(N);
 	}
 
 	private void testThread(int num) {
