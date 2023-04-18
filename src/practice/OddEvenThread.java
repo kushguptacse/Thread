@@ -37,8 +37,8 @@ public class OddEvenThread {
 
 			}
 		});
-		oddThread.setPriority(10);
-		evenThread.setPriority(1);
+		oddThread.setPriority(Thread.MAX_PRIORITY);
+		evenThread.setPriority(Thread.MIN_PRIORITY);
 		oddThread.start();
 		evenThread.start();
 	}
